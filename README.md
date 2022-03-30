@@ -1,7 +1,7 @@
 # Generative-art-generator
 Generative Art Generator: Creates unique random assets with layered sprites along with Opensea compliant .json for each one.
 
-The first set of folders inside "/assets" referes to different breeds for the art generation. For example: If you would create a collection with different breads of dogs, but not every breed would have the same selectable assets such as nose or tail, you would place those assets inside the layers of each respectable breed. In case there is only one breed, only one folder is needed in the directory.
+The first set of folders inside "/assets" referes to different breeds for the art generation. For example: If you would create a collection with different breads of dogs, but not every breed would have the same selectable sprites such as nose or tail, you would place those assets inside the layers of each respectable breed. In case there is only one breed, only one folder is needed in the directory.
 
 Create breed name along with respectable rarity value in the format "breedname_rarityValue". Keep in mind all rarity values are relative to the rarity of other breeds.
 
