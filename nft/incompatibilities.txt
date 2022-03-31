@@ -1,2 +1,1 @@
-hat:1-hair:1
-hair:1-beard:2
+
