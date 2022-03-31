@@ -5,7 +5,7 @@ import random
 import json
 from PIL import Image
 
-POPULATION_COUNT = 1000
+POPULATION_COUNT = 60
 incompatibilities = []
 file = open("incompatibilities.txt")
 # file=open(str(Path().cwd().parent.joinpath("incompatibilities.txt")))
@@ -80,10 +80,10 @@ class Person:
 
     def get_metadata(self, index: int):
         return {
-            "description": "Fake Non-Fungible characters in the testnet",
-            "external_url": "https://openseacreatures.io/3",
-            "image": "",
-            "name": f"Non-Fungible Character #{index}",
+            "description": "Description of your collection",
+            "external_url": "External url to collection",
+            "image": "Image URI",
+            "name": f"Name of Character #{index}",
             "attributes": {asset.layer.title: f"Type: #{asset.title}" for asset in self.assets},
         }        
     def save_metadado(self, path: Path, index: int):
@@ -175,6 +175,6 @@ population = Population(
 )
 
 for index, person in enumerate(population.getPeople()):
-    person.render().save(f"collection/Non-Fungible Character-#{index}.png")
-    person.save_metadado(Path(f"collectionjson/Non-Fungible Character-#{index}.json"), index)
+    person.render().save(f"collection/NameOfCharacter-#{index}.png")
+    person.save_metadado(Path(f"collectionjson/NameOfCharacter-#{index}.json"), index)
     
